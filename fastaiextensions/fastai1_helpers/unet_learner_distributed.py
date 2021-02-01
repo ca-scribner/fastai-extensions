@@ -3,8 +3,9 @@ from fastai.basic_data import DataBunch
 from fastai.vision import NormType, SplitFuncOrIdxList, nn
 from typing import Callable, Optional, Tuple, Union, Any
 
-from fastai.vision.learner import cnn_config, create_body, to_device, apply_init
 from fastai import distributed
+from fastai.vision import models
+from fastai.vision.learner import cnn_config, create_body, to_device, apply_init
 from fastai.core import ifnone
 def unet_learner_distributed(data:DataBunch, arch:Callable, pretrained:bool=True, blur_final:bool=True,
                  norm_type:Optional[NormType]=None, split_on:Optional[SplitFuncOrIdxList]=None, blur:bool=False,
