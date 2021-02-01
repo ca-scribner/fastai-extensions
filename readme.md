@@ -6,9 +6,11 @@ These are not necessarily all aimed at the same fastai version and purposefully 
 
 # Tools
 
+## unet_learner_distributed:
+* A Data Distributed Parallel (DDP) fast.ai Learner that works from v1 but conforms with the distributed.Learner API of fast.ai v2 (or at least it is closer...)
+
 ## ImageListS3:
 * A fast.ai ImageList that reads images directly from S3 rather than from local files
-* 
 
 ### Future/Todo
 * fix parallelization problem below
